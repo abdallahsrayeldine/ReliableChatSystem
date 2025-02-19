@@ -47,7 +47,7 @@ def check_acknowledgements(sock):
     while True:
         for seq, message in list(unacknowledged_messages.items()):
             if seq not in received_messages:
-                sock.sendto((str(seq) + ':' + str(message)).encode(), ('localhost', 12347))
+                sock.sendto((str(seq) + ':' + str(message)).encode(), ('localhost', 12346))
                 chatbox.insert(tk.END, "*Resent message: " + str(message) + '\n')
                 sys.stderr.write("Resent message {}\n".format(seq))
         time.sleep(3)  # Check for unacknowledged messages every second
