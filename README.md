@@ -1,4 +1,4 @@
-# Chat App — User 1 (README) 📨🖥️
+# Chat App 📨🖥️
 
 Simple GUI chat client using UDP for messages (with sequence numbers + ACKs) and TCP for file transfer. Built with `tkinter` + `ttkthemes`. Runs as *User 1* (there’s a mirror `user2` file for the other client).
 Quick, local, and educational — not production-ready. ⚠️
